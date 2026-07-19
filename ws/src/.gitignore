@@ -2,13 +2,6 @@
 devel/
 install/
 build/
-log/
-.catkin_tools/
-.catkin_workspace/
-
-# Игнорируем временные файлы Python
-*.pyc
-__pycache__/
 
 # Игнорируем файлы IDE
 .idea/
