@@ -1,0 +1,6 @@
+<launch>
+
+  <include file="/home/pi/ws/src/diff_drive/launch/project.launch" />
+  <include file="/home/pi/ws/src/diff_drive/launch/projectnavigate.launch" />
+
+</launch>

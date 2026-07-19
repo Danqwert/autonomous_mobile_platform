@@ -1,0 +1,10 @@
+<launch>
+    <node pkg="move_base" type="move_base" respawn="false" name="move_base" output="screen">
+        <rosparam file="/home/pi/ws/src/diff_drive/launch/formove_baselaunch/costmap_common_params.yaml" command="load" ns="global_costmap" />
+        <rosparam file="/home/pi/ws/src/diff_drive/launch/formove_baselaunch/costmap_common_params.yaml" command="load" ns="local_costmap" />
+        <rosparam file="/home/pi/ws/src/diff_drive/launch/formove_baselaunch/local_costmap_params.yaml" command="load" />
+        <rosparam file="/home/pi/ws/src/diff_drive/launch/formove_baselaunch/global_costmap_params.yaml" command="load" />
+        <rosparam file="/home/pi/ws/src/diff_drive/launch/formove_baselaunch/base_local_planner_default_params.yaml" command="load" />
+        <rosparam file="/home/pi/ws/src/diff_drive/launch/formove_baselaunch/move_base_params.yaml" command="load" />
+    </node>
+</launch>

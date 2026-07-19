@@ -1,0 +1,37 @@
+<launch>
+
+  <arg name="ticks_per_meter" value="127" />
+  <arg name="wheel_separation" value="0.45" />
+
+  <include file="/home/pi/ws/src/ydlidar_ros/launch/X2L.launch" />
+
+
+  <node name="controller" pkg="diff_drive" type="diff_drive_controller"
+        output="screen">
+    <rosparam subst_value="true">
+      ticks_per_meter: $(arg ticks_per_meter)
+      wheel_separation: $(arg wheel_separation)
+      max_motor_speed: 20
+      timeout: 1.0
+      rate: 3.0
+    </rosparam>
+  </node>
+  
+  <node name="odom_publisher" pkg="diff_drive" type="diff_drive_odometry"
+        output="screen">
+    <rosparam subst_value="true">
+      ticks_per_meter: $(arg ticks_per_meter)
+      wheel_separation: $(arg wheel_separation)
+      rate: 3.0
+      base_frame_id: "base_link"
+    </rosparam>
+  </node>
+
+
+  <node name="serial_node" pkg="rosserial_python"  type="serial_node.py">
+    <param name="port" type="string" value="/dev/arduino" />
+    <param name="baud" type="int" value="57600" />
+  </node>
+
+
+</launch>

@@ -1,0 +1,17 @@
+<launch>
+    <!-- Publish static transform from base_footprint to base_link -->
+    <node pkg="tf2_ros" type="static_transform_publisher" name="base_footprint_to_base_link" args="0 0 0.070 0 0 0  base_footprint base_link"/>
+    
+    <!-- Map server -->
+    <arg name="map_file" default="/home/pi/ws/src/diff_drive/launch/house.yaml"/>
+    <node name="map_server" pkg="map_server" type="map_server" args="$(arg map_file)">
+   	 <param name="frame_id" value="map"/>
+    </node>
+
+    <!-- AMCL used for localization -->
+    <include file="/home/pi/ws/src/diff_drive/launch/projectamcl.launch" />
+    
+    <!-- Calls navigation stack packages for compatible Linorobot base -->
+    <!-- Takes reference from env variable LINOBASE. ie. export LINOBASE=2wd -->
+    <include file="/home/pi/ws/src/diff_drive/launch/projectmove_base_2wd.launch" />
+</launch>
