@@ -1,12 +1,1 @@
-# Игнорируем папки сборки ROS
-devel/
-install/
-build/
 
-# Игнорируем файлы IDE
-.idea/
-.vscode/
-
-# Игнорируем системные файлы
-.DS_Store
-Thumbs.db
