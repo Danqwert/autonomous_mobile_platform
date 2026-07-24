@@ -8,10 +8,10 @@
 ## 📸 Демо
 
 
-<img src="images/nav640.gif" alt="Демо" width="560">
+<img src="images/mapping.gif" alt="Демо" width="560">
 *построение карты*
 
-![Скриншот 1](images/navigation.gif)
+<img src="images/navigation.gif" alt="Демо" width="560">
 *автономная навигация по построенной карте*
 
 ## 📚 Источники
