@@ -7,7 +7,7 @@
 
 ## 📸 Демо
 
-![Скриншот 1](images/mapping_hectorSLAM.gif)
+![Скриншот 1](images/my_map.png)
 *построение карты*
 
 ![Скриншот 1](images/navigation.gif)
