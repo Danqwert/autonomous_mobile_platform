@@ -8,7 +8,7 @@
 ## 📸 Демо
 
 
-<img src="images/nav640.gif" alt="Демо" width="400">
+<img src="images/nav640.gif" alt="Демо" width="600">
 *построение карты*
 
 ![Скриншот 1](images/navigation.gif)
