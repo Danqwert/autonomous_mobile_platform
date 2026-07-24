@@ -8,7 +8,7 @@
 ## 📸 Демо
 
 
-<img src="images/mapping.gif" alt="Демо" width="560">
+<img src="images/mapping_hectorSLAM.gif" alt="Демо" width="560">
 *построение карты*
 
 <img src="images/navigation.gif" alt="Демо" width="560">
