@@ -29,11 +29,11 @@
 
 _построение карты_
 
-<img src="images/mapping.gif" alt="Демо" width="560">
+<img src="images/mapping.gif" alt="Демо" width="520">
 
 _автономная навигация по построенной карте_
 
-<img src="images/navigation.gif" alt="Демо" width="560">
+<img src="images/navigation.gif" alt="Демо" width="520">
 
 
 ## 📚 Источники
