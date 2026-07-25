@@ -29,7 +29,7 @@
 
 _построение карты_
 
-<img src="images/mapping_hectorSLAM.gif" alt="Демо" width="560">
+<img src="images/mapping.gif" alt="Демо" width="560">
 
 _автономная навигация по построенной карте_
 
