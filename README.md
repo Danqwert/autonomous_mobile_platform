@@ -26,12 +26,12 @@
 - manipulator_uno.ino - решатель прямой кинематики манипулятора, расчет значений углов звеньев для захвата объекта, реализованный на контроллере arduino.
 
 ## 📸 Демо
-
-<img src="images/mapping_hectorSLAM.gif" alt="Демо" width="560">
 _построение карты_
+<img src="images/mapping_hectorSLAM.gif" alt="Демо" width="560">
 
-<img src="images/navigation.gif" alt="Демо" width="560">
 _автономная навигация по построенной карте_
+<img src="images/navigation.gif" alt="Демо" width="560">
+
 
 ## 📚 Источники
 - [diff_drive ROS package](https://github.com/merose/diff_drive) - пакет диффференциального привода, позволяющий контроллировать скорость робота и принимать данные одометрии колесных энкодеров.
